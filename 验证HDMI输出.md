@@ -58,3 +58,56 @@ VOP [ff370000.vop]: ACTIVE
 a2k_box:/ # cat /sys/class/drm/card0-HDMI-A-1/status
 connected
 a2k_box:/ #
+
+
+
+a2k_box:/sys/class/drm # ls -l
+total 0
+lrwxrwxrwx 1 root root    0 2020-07-23 16:38 card0 -> ../../devices/platform/display-subsystem/drm/card0
+lrwxrwxrwx 1 root root    0 2020-07-23 16:34 card0-HDMI-A-1 -> ../../devices/platform/display-subsystem/drm/card0/card0-HDMI-A-1
+lrwxrwxrwx 1 root root    0 2020-07-23 16:38 controlD64 -> ../../devices/platform/display-subsystem/drm/controlD64
+lrwxrwxrwx 1 root root    0 2020-07-23 16:38 renderD128 -> ../../devices/platform/display-subsystem/drm/renderD128
+-r--r--r-- 1 root root 4096 2020-07-23 16:38 version
+a2k_box:/sys/class/drm #
+
+
+
+a2k_box:/sys/class/drm/card0-HDMI-A-1 # ls -l
+total 0
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 audioformat
+-rw-r--r-- 1 root   root   4096 2020-07-23 16:34 content_protection
+lrwxrwxrwx 1 root   root      0 2020-07-23 16:38 device -> ../../card0
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 dpms
+-r--r--r-- 1 root   root      0 2020-07-23 16:34 edid
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 enabled
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 mode
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 modes
+drwxr-xr-x 2 root   root      0 2020-07-23 16:38 power
+-rw-r--r-- 1 system system 4096 2020-07-23 16:34 status
+lrwxrwxrwx 1 root   root      0 2020-07-23 16:38 subsystem -> ../../../../../../class/drm
+-rw-r--r-- 1 root   root   4096 2020-07-23 16:34 uevent
+a2k_box:/sys/class/drm/card0-HDMI-A-1 #
+
+
+
+
+
+
+a2k_box:/sys/devices/platform/display-subsystem/drm/card0/card0-HDMI-A-1 # ls -l
+total 0
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 audioformat
+-rw-r--r-- 1 root   root   4096 2020-07-23 16:34 content_protection
+lrwxrwxrwx 1 root   root      0 2020-07-23 16:38 device -> ../../card0
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 dpms
+-r--r--r-- 1 root   root      0 2020-07-23 16:34 edid
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 enabled
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 mode
+-r--r--r-- 1 root   root   4096 2020-07-23 16:34 modes
+drwxr-xr-x 2 root   root      0 2020-07-23 16:38 power
+-rw-r--r-- 1 system system 4096 2020-07-23 16:34 status
+lrwxrwxrwx 1 root   root      0 2020-07-23 16:38 subsystem -> ../../../../../../class/drm
+-rw-r--r-- 1 root   root   4096 2020-07-23 16:34 uevent
+
+
+
+	

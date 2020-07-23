@@ -1,2 +1,0 @@
-Settings.System.putIntForUser(mContext.getContentResolver(),
-                            Settings.System.SCREEN_BRIGHTNESS, brightness, UserHandle.USER_CURRENT);
