@@ -1,0 +1,1 @@
+查看DDR频率：adb shell && cat  /sys/class/devfreq/dmc/trans_stat
