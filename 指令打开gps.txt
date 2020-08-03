@@ -1,0 +1,13 @@
+指令打开gps
+
+echo  -e  "AT+QGPS=1\r\n"     >    /dev/ttyUSB2      GPS会话配置及启动
+echo  -e  "AT+QGPSEND\r\n"  >   /dev/ttyUSB2   GPS数据结束上报
+
+
+echo  -e  "AT+QGPSLOC?\r\n"  >   /dev/ttyUSB2 
+
+echo -e   'AT+QGPSCFG="gpsnmeatype",1\r\n' > /dev/ttyUSB2     (配置nmea格式为GGA)
+
+只有nmeasrc,1下面的指令才能用
+echo -e   'AT+QGPSCFG="nmeasrc",1\r\n' > /dev/ttyUSB2
+echo -e   'AT+QGPSGNMEA="GGA"\r\n'  > /dev/ttyUSB2   (配置nmea格式为GGA)
